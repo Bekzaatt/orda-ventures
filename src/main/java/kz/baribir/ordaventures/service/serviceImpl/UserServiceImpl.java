@@ -19,8 +19,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User get(String id) {
-        Optional<User> optional = userRepository.findById(Long.parseLong(id));
+    public User get(Long id) {
+        Optional<User> optional = userRepository.findById(id);
         if(optional.isPresent()){
             return optional.get();
         }
@@ -28,8 +28,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void delete(String id) {
-        userRepository.deleteById(Long.parseLong(id));
+    public void delete(Long id) {
+        userRepository.deleteById(id);
     }
 
 }

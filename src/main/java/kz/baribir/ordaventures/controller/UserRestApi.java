@@ -21,7 +21,7 @@ public class UserRestApi {
     }
 
     @GetMapping("/users/{id}")
-    public User getUserById(@PathVariable String id){
+    public User getUserById(@PathVariable Long id){
         return userService.get(id);
     }
 
@@ -33,7 +33,7 @@ public class UserRestApi {
     }
 
     @DeleteMapping("/users/{id}")
-    public void deleteUser(@PathVariable String id){
+    public void deleteUser(@PathVariable Long id){
         userService.delete(id);
     }
 

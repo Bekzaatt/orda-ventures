@@ -35,7 +35,7 @@ public class StartupRestApi {
     }
 
     @DeleteMapping("/startups/{id}")
-    public void deleteStartup(@PathVariable String id){
+    public void deleteStartup(@PathVariable Long id){
 
         startupService.deleteStartup(id);
     }

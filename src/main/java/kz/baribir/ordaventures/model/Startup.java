@@ -5,12 +5,9 @@ import lombok.Data;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 @Data
-@Entity
-
 public class Startup {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+
+    private Long id;
 
     private String name;
 

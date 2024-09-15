@@ -15,31 +15,36 @@ public class StartupServiceImpl implements StartupService {
     private StartupRepository startupRepository;
     @Override
     public Startup create(Startup startup) {
-        startupRepository.save(startup);
-        return startup;
+//        startupRepository.save(startup);
+//        return startup;
+        return null;
     }
 
     @Override
     public Startup getStartupByUserId(Long id) {
-        Optional<Startup> optional = startupRepository.findById(id.toString());
-        if(optional.isPresent()){
-            return optional.get();
-        }
-        else return null;
+//        Optional<Startup> optional = startupRepository.findById(id);
+//        if(optional.isPresent()){
+//            return optional.get();
+//        }
+//        else return null;
+        return null;
     }
 
     @Override
     public List<Startup> getAllStartups() {
-        return startupRepository.findAll();
+    return null;
+        //        return startupRepository.findAll();
     }
 
     @Override
     public Startup update(Startup updatedStartup) { // Id ozgermeidy dep karadyk
-        return startupRepository.save(updatedStartup);
+        return null;
+                //startupRepository.save(updatedStartup);
     }
 
     @Override
-    public void deleteStartup(String id) { // URL-da String-pen beru kk
-        startupRepository.deleteById(id);
+    public void deleteStartup(Long id) { // URL-da String-pen beru kk
+
+        //startupRepository.deleteById(id);
     }
 }

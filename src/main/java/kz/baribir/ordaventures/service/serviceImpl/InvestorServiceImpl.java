@@ -17,30 +17,41 @@ public class InvestorServiceImpl implements InvestorService {
     InvestorRepository investorRepository;
     @Override
     public Investor create(Investor investor) {
-        return investorRepository.save(investor);
+        //return investorRepository.save(investor);
+        return null;
 
     }
 
     @Override
     public Investor getInvestorByUserId(Long id) {
-        Optional<Investor> optional = investorRepository.findById(id.toString());
-        if(optional.isPresent()){
-            return optional.get();
-        }else return null;
+//        Optional<Investor> optional = investorRepository.findById(id);
+//        if(optional.isPresent()){
+//            return optional.get();
+//        }else return null;
+        return null;
+
     }
 
     @Override
     public List<Investor> getAllInvestors() {
-        return investorRepository.findAll();
+
+//        return investorRepository.findAll();
+        return null;
+
     }
 
     @Override
     public Investor update(Investor updatedInvestor) {
-        return investorRepository.save(updatedInvestor);
+
+        return null;
+
+//        return investorRepository.save(updatedInvestor);
     }
 
     @Override
     public void delete(Long id) {
-        investorRepository.deleteById(id.toString());
+
+
+//        investorRepository.deleteById(id);
     }
 }

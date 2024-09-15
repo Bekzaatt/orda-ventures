@@ -5,6 +5,6 @@ import kz.baribir.ordaventures.model.User;
 public interface UserService {
 
     void save(User user);
-    User get(String id);
-    void delete(String id);
+    User get(Long id);
+    void delete(Long id);
 }

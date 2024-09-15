@@ -9,5 +9,5 @@ public interface StartupService{
     Startup getStartupByUserId(Long id); // Получение стартапа по ID
     List<Startup> getAllStartups(); // Получение списка всех стартапов
     Startup update(Startup updatedStartup); // Обновление стартапа
-    void deleteStartup(String id); // Удаление стартапа
+    void deleteStartup(Long id); // Удаление стартапа
 }

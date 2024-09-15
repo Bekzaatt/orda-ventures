@@ -4,13 +4,8 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 @Data
-//@Entity
-
 public class Investor {
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-
-    private String id;
+    private Long id;
 
     private String name;
 
