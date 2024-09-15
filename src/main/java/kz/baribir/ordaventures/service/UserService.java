@@ -6,5 +6,5 @@ public interface UserService {
 
     void save(User user);
     User get(String id);
-    boolean delete(String id);
+    void delete(String id);
 }
