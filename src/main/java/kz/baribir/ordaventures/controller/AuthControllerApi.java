@@ -19,8 +19,14 @@ public class AuthControllerApi {
     }
 
     @GetMapping("/login")
-    public boolean Login(@PathVariable("username") String username, @PathVariable("password") String password){
-        return authService.login(username, password);
+    public String Login(@PathVariable("username") String username, @PathVariable("password") String password){
+        try {
+            authService.login(username, password);
+            return "OK";
+        }catch(Exception e) {
+            return e.getMessage();
+        }
+
     }
 
 

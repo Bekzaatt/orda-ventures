@@ -1,15 +1,13 @@
 package kz.baribir.ordaventures.service.serviceImpl;
 
-import kz.baribir.ordaventures.repository.repositories.AuthRepository;
 import kz.baribir.ordaventures.service.AuthService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
 import java.util.Map;
 @Service
 public class AuthServiceImpl implements AuthService {
-    HashMap<String, String> authorithes = new HashMap<>();
+    private final HashMap<String, String> authorithes = new HashMap<>();
 
     @Override
     public boolean login(String username, String password){

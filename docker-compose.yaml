@@ -1,22 +1,22 @@
-services:
-  db:
-    image: postgres
-    container_name: postgres_con
-    environment:
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: admin
-      POSTGRES_DB: mydb
-    ports:
-      - "5432:5432"
-    volumes:
-      - C:\Users\Asus\postgres_container_docker:/var/lib/postgresql/data
-    restart: always
-    networks:
-      - springboot-network
-
-networks:
-  springboot-network:
-    driver: bridge
-
-volumes:
-  postgres_data:
+#services:
+#  db:
+#    image: postgres:15
+#    container_name: postgres_con
+#    environment:
+#      POSTGRES_USER: admin
+#      POSTGRES_PASSWORD: admin
+#      POSTGRES_DB: mydb
+#    ports:
+#      - "5432:5432"
+#    volumes:
+#      - C:\Users\Asus\postgres_container_docker2:/var/lib/postgresql/data
+#    restart: always
+#    networks:
+#      - springboot-network
+#
+#networks:
+#  springboot-network:
+#    driver: bridge
+#
+#volumes:
+#  postgres_data:

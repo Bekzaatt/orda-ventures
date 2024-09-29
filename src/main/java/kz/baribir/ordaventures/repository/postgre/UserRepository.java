@@ -1,4 +1,4 @@
-package kz.baribir.ordaventures.repository.repositories;
+package kz.baribir.ordaventures.repository.postgre;
 
 import kz.baribir.ordaventures.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;

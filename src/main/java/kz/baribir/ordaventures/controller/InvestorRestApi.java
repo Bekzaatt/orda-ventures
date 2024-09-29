@@ -44,4 +44,7 @@ public class InvestorRestApi {
         investorService.delete(id);
     }
 
+
+
+
 }

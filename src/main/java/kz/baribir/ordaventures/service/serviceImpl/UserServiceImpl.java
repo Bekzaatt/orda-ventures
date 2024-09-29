@@ -1,8 +1,7 @@
 package kz.baribir.ordaventures.service.serviceImpl;
 
 import kz.baribir.ordaventures.model.User;
-import kz.baribir.ordaventures.repository.repositories.UserRepository;
-import kz.baribir.ordaventures.service.AuthService;
+import kz.baribir.ordaventures.repository.postgre.UserRepository;
 import kz.baribir.ordaventures.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

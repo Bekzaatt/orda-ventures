@@ -1,9 +1,10 @@
 package kz.baribir.ordaventures.service;
 
 import kz.baribir.ordaventures.model.Investor;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public interface InvestorService {
 
     Investor create(Investor investor); // Создание нового инвестора
